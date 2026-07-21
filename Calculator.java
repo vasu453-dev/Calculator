@@ -10,11 +10,14 @@ public class Calculator{
         int mul = multiplication(a, b);
         int div = division(a, b);
         int squareA = square(a);
+        int maximum = maximum(a, b);
         System.out.println("Addition of" + a + " and " + b + " is " + sum);
         System.out.println("Difference of " + a + " and " + b + " is " + diff);  
         System.out.println("Multiplication of " + a + " and " + b + " is " + mul);
         System.out.println("Division of " + a + " and " + b + " is " + div);
         System.out.println("Square of "+a+" is "+squareA);
+        System.out.println("Maximum of "+a+" and "+b+" is "+maximum);
+        
         sc.close();
     }
     public static int addition(int a , int b){
@@ -31,5 +34,8 @@ public class Calculator{
     }
     public static int square(int a){
         return a * a;
+    }
+    public static int maximum(int a , int b){
+        return Math.max(a , b);
     }
 }

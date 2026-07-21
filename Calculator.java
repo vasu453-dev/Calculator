@@ -35,6 +35,9 @@ public class Calculator{
     public static int square(int a){
         return a * a;
     }
+    public static int maximum(int a , int b){
+        return Math.max(a , b);
+    }
     public static int minimum(int a , int b){
         return Math.min(a , b);
     }
